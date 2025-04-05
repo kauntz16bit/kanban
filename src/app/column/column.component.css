@@ -1,0 +1,13 @@
+.column {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 250px;
+    padding: 0.75rem; /* Reduzido de 1rem para 0.75rem */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .column h2 {
+    text-align: center;
+    margin-bottom: 0.5rem; /* Diminuído de 0.75rem */
+  }
+  

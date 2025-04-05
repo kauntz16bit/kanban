@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-column',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, CardComponent],
   templateUrl: './column.component.html',
-  styleUrl: './column.component.css'
+  styleUrls: ['./column.component.css']
 })
 export class ColumnComponent {
-
+  @Input() title: string = '';
+  @Input() cards: string[] = [];
 }

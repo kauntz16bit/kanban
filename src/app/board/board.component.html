@@ -1,6 +1,7 @@
 <div class="board">
-  <div class="column">
-    <h2>To Do</h2>
-    <div class="card">Exemplo de tarefa</div>
-  </div>
+  <app-column
+    *ngFor="let column of columns"
+    [title]="column.title"
+    [cards]="column.cards"
+  ></app-column>
 </div>
